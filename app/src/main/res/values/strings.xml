@@ -3,6 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
 
     <!-- Generales -->
@@ -18,4 +19,11 @@
         <item name="texto_promociones">@string/almacenes</item>
         <item name="texto_promociones">@string/perfil</item>
     </array>
+
+    <!-- LOGIN -->
+    <string name="textoEmail">Email</string>
+    <string name="textoContrasena">Contraseña</string>
+    <string name="textoIngresar">Ingresar</string>
+    <string name="textoRegistrarse">Registrarse</string>
+    <string name="textoResetearContrasena">Resetear Contraseña</string>
 </resources>
