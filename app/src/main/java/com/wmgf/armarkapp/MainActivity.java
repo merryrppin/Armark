@@ -10,8 +10,8 @@ import io.fabric.sdk.android.Fabric;
 public class MainActivity extends Activity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "6haboLvf3pa9zXeDjUU8jQg1v";
-    private static final String TWITTER_SECRET = "JIGiFIh5ytdaV7dGXoQgCAv1WGtpEzGGWX50LHr5UfdavLashA";
+    private static final String TWITTER_KEY = "y8wmjElyLKrCxhI222PExzkjL";
+    private static final String TWITTER_SECRET = "jzKrToVjYNEKcMWYWmmFMIWdHCVVZC04iau9ruVmauhh9pbnIO";
 
 
     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
 
-        Intent act = new Intent(this, MenuPrincipalActivity.class);
+        Intent act = new Intent(this, LoginActivity.class);
         startActivity(act);
     }
 
