@@ -2,4 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- LOGIN -->
+    <dimen name="dimen_login_distancia_boton_sup1">10dp</dimen>
+    <dimen name="dimen_login_distancia_boton_inf1">5dp</dimen>
+    <dimen name="dimen_login_distancia_boton_sup2">5dp</dimen>
+    <dimen name="dimen_height_button_face_twit">40dp</dimen>
 </resources>

@@ -26,4 +26,11 @@
     <string name="textoIngresar">Ingresar</string>
     <string name="textoRegistrarse">Registrarse</string>
     <string name="textoResetearContrasena">Resetear Contraseña</string>
+    <string name="textoRepetirContrasena">Repetir Contraseña</string>
+    <string name="textoNombre">Nombre</string>
+
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
