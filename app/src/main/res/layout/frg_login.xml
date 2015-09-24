@@ -30,14 +30,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/frg_login_btnIngresar"
+            android:id="@+id/btn_frg_login_btnIngresar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/textoIngresar" />
 
         <Button
-            android:id="@+id/frg_login_btnRegistrarse"
+            android:id="@+id/btn_frg_login_btnRegistrarse"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/frg_login_btnResetearContrasena"
+        android:id="@+id/btn_frg_login_btnResetearContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

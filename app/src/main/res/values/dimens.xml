@@ -8,4 +8,11 @@
     <dimen name="dimen_login_distancia_boton_inf1">5dp</dimen>
     <dimen name="dimen_login_distancia_boton_sup2">5dp</dimen>
     <dimen name="dimen_height_button_face_twit">40dp</dimen>
+
+    <!-- MENU PRINCIPAL -->
+    <dimen name="dimen_row_principal_margin_img">4dp</dimen>
+    <dimen name="dimen_row_principal_margin">5dp</dimen>
+    <dimen name="dimen_row_principal_img_width">60dp</dimen>
+    <dimen name="dimen_row_principal_img_height">60dp</dimen>
+    <dimen name="dimen_row_principal_height">80dp</dimen>
 </resources>

@@ -5,6 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="facebook_app_id">cSFPNYQpHfu0g/YsxQZR2lnkhBk=</string>
+    <string name="textoBuscar">Buscar</string>
 
     <!-- Generales -->
     <string name="promociones">Promociones</string>
@@ -14,11 +16,14 @@
 
     <!-- Menu Principal -->
     <array name="arrayTextoSuperiorMenu">
-        <item name="texto_promociones">@string/promociones</item>
-        <item name="texto_promociones">@string/productos</item>
-        <item name="texto_promociones">@string/almacenes</item>
-        <item name="texto_promociones">@string/perfil</item>
+        <item>@string/promociones</item>
+        <item>@string/productos</item>
+        <item>@string/almacenes</item>
+        <item>@string/perfil</item>
+        <item>@string/perfil</item>
     </array>
+    <string name="textoBuscarLista">Buscar...</string>
+    <string name="textoSinDescripcion">Sin descripción</string>
 
     <!-- LOGIN -->
     <string name="textoEmail">Email</string>

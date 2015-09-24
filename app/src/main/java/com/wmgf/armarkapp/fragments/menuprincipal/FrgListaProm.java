@@ -1,4 +1,4 @@
-package com.wmgf.armarkapp.fragments;
+package com.wmgf.armarkapp.fragments.menuprincipal;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,15 +10,15 @@ import android.widget.TextView;
 import com.wmgf.armarkapp.R;
 
 
-public class Frg_Lista_Prom extends Fragment {
+public class FrgListaProm extends Fragment {
         public static final String ARG_PAGE = "ARG_PAGE";
 
         private int mPage;
 
-        public static Frg_Lista_Prom newInstance(int page) {
+        public static FrgListaProm newInstance(int page) {
             Bundle args = new Bundle();
             args.putInt(ARG_PAGE, page);
-            Frg_Lista_Prom fragment = new Frg_Lista_Prom();
+            FrgListaProm fragment = new FrgListaProm();
             fragment.setArguments(args);
             return fragment;
         }
@@ -33,7 +33,7 @@ public class Frg_Lista_Prom extends Fragment {
         // Set the associated text for the title
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.frg_lista_prom, container, false);
+            View view = inflater.inflate(R.layout.frg_lista_prin, container, false);
             TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
             tvTitle.setText("Fragment #" + mPage);
             return view;

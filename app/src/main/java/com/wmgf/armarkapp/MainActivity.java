@@ -3,8 +3,10 @@ package com.wmgf.armarkapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends Activity {
@@ -23,6 +25,6 @@ public class MainActivity extends Activity {
 
         Intent act = new Intent(this, LoginActivity.class);
         startActivity(act);
+        finish();
     }
-
 }

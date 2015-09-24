@@ -1,12 +1,9 @@
 package com.wmgf.armarkapp;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
@@ -20,9 +17,8 @@ public class MenuPrincipalActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
-
+        context = getApplicationContext();
         configuracionTab();
-
     }
 
     public void configuracionTab() {
@@ -31,9 +27,7 @@ public class MenuPrincipalActivity extends FragmentActivity {
         viewPager.setAdapter(new AdapterLista(getSupportFragmentManager(), tabTitles));
 
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
-
         tabsStrip.setViewPager(viewPager);
-
         tabsStrip.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             // This method will be invoked when a new page becomes selected.

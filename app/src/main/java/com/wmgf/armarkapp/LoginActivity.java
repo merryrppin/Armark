@@ -4,46 +4,34 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
 
 import com.desarrollodroide.libraryfragmenttransactionextended.FragmentTransactionExtended;
-import com.wmgf.armarkapp.fragments.Frg_Login;
-import com.wmgf.armarkapp.fragments.Frg_Registrarse;
-import com.wmgf.armarkapp.fragments.Frg_ResetearContrasena;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookSdk;
+import com.wmgf.armarkapp.fragments.login.FrgLogin;
 
 public class LoginActivity extends Activity {
     private int optionSelected = 0;
-    private View.OnClickListener onClickResetearPass, onClickRegistrarse;
-    private Frg_Login frgLogin;
-    private Frg_Registrarse frgRegistrarse;
-    private Frg_ResetearContrasena frg_resetearContrasena;
-    private Fragment frgActual;
+    private FrgLogin frgLogin;
+    public Fragment frgActual;
+    private Context context;
+    private CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        callbackManager = CallbackManager.Factory.create();
         inicializarVariables();
         colocarPrimerFragment();
     }
 
     private void inicializarVariables() {
-        onClickResetearPass = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addTransition(frgActual, frg_resetearContrasena);
-            }
-        };
-        onClickRegistrarse = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addTransition(frgActual, frgRegistrarse);
-            }
-        };
-        frgLogin = new Frg_Login();
-        frgRegistrarse = new Frg_Registrarse();
-        frg_resetearContrasena = new Frg_ResetearContrasena();
+        context = this;
+        frgLogin = new FrgLogin();
     }
 
     private void colocarPrimerFragment() {
